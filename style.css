@@ -13,6 +13,10 @@
   font-family: 'Red Hat Display', sans-serif;
 }
 
+p {
+  font-size: 16px;
+}
+
 main {
   height: 100vh;
   background-color: var(--pale-blue);
@@ -31,10 +35,80 @@ main {
   border-radius: 1rem;
 }
 
-.illustration {
+.illustration img {
   max-width: 100%;
 }
 
 .order-summary {
   text-align: center;
+  padding: 40px;
+}
+
+.order-summary .summary {
+  padding: 20px 0;
+  color: var(--desaturated-blue);
+  line-height: 1.5rem;
+}
+
+.order-summary .plan {
+  background-color: var(--very-pale-blue);
+  padding: 20px;
+  border-radius: .75rem;
+  display: flex;
+  align-items: center;
+}
+
+.order-summary .plan .plan-name {
+  font-weight: 900;
+}
+
+.order-summary .plan .plan-cost {
+  color: var(--desaturated-blue);
+}
+
+.order-summary .plan .plan-details {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  line-height: 1.75rem;
+  text-align: left;
+}
+
+.order-summary .plan .change-btn {
+  color: var(--bright-blue);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.order-summary .plan .change-btn:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: hsl(245, 83%, 69%);
+}
+
+.order-summary .proceed-btn {
+  margin: 40px 0;
+  border: none;
+  padding: 16px 0;
+  width: 100%;
+  border-radius: 0.75rem;
+  background-color: var(--bright-blue);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 20px 20px hsl(245deg 75% 52% / 0.2);
+}
+
+.order-summary .proceed-btn:hover {
+  cursor: pointer;
+  background-color: hsl(245, 83%, 69%);
+}
+
+.order-summary .cancel-btn {
+  color: var(--desaturated-blue);
+  font-weight: 900;
+}
+
+.order-summary .cancel-btn:hover {
+  color: hsl(0, 0%, 0%);
+  cursor: pointer;
 }
