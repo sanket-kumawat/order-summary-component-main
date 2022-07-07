@@ -112,3 +112,15 @@ main {
   color: hsl(0, 0%, 0%);
   cursor: pointer;
 }
+
+@media screen and (max-width: 375px) {
+  .order-summary .plan {
+    flex-direction: column;
+  }
+
+  .order-summary .plan .plan-details {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+  }
+}
